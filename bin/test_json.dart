@@ -16,12 +16,13 @@ class User {
 }
 
 void main() {
-  var jsonString = {
+
+  var userMap = {
     "name": "John Smith",
     "email": "john@example.com"
   };
   
-  Map userMap = jsonDecode(jsonString);
+  // Map userMap = jsonDecode(jsonString);
   var user = User.fromJson(userMap);
 
   print('Howdy, ${user.name}!');
